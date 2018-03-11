@@ -1,0 +1,93 @@
+[
+    {
+        "type":"file",
+        "name":"pfx",
+        "label":"Certificado",
+        "description":"Agregue su certificado",
+        "accepts":"application/pkcs12"
+
+    },
+    {
+        "left":"@",
+        "right":".com",
+        "type":"text",
+        "name":"nombre",
+        "label":"Primer Nombre",
+        "description":"Ingrese su primer nombre",
+        "value":"asd",
+        "validate":{"min":2,"regexp":["\\d+","i"]}
+
+    },
+    {
+        "type":"email",
+        "name":"correo",
+        "placeholder":"Su Correo",
+        "label":"Correo Electrónico",
+        "value":"a@b.cl",
+        "description":"Ingrese su correo electrónico",
+        "validate":{"double_check":true}
+    },
+    {
+        "type":"date",
+        "name":"date",
+        "placeholder":"dd/mm/yyyy",
+        "value":"2017-12-15",
+        "label":"fecha inicial",
+        "description":"Ingrese su correo electrónico",
+        "validate":{"double_check":true,"range":["2017-11-11","2017-12-20"]}
+    },
+    {
+        "type":"url",
+        "name":"url",
+        "placeholder":"http://www.google.cl",
+        "label":"url inicial",
+        "description":"url",
+        "value":"http://www.a.cl"
+    },
+    {
+        "type":"range",
+        "name":"rango",
+        "label":"rango inicial",
+        "description":"rango",
+        "value":"10",
+        "validate":{"range":[20,50]}
+    },
+    {
+        "type":"number",
+        "name":"numero",
+        "placeholder":"Su Número",
+        "label":"Número",
+        "description":"Ingrese su número",
+        "validate":{"range":[2,5]}
+    },
+    {
+        "type":"select",
+        "name":"select",
+        "label":"Select",
+        "multiple":true,
+        "required":true,
+        "value":[2,3],
+        "placeholder":"http://www.google.cl",
+        "description":"Ingrese su select",
+        "validate":{"double_check":true,"range":[2,3]},
+        "options":[1,2,3,4]
+
+    },
+    {
+        "type":"checkbox-group",
+        "name":"group",
+        "label":"grupo",
+        "buttons":true,
+        "stacked":false,
+        "button-variant":"warning",
+        "value":[2,3],
+        "placeholder":"http://www.google.cl",
+        "description":"Ingrese su select",
+        "validate":{"double_check":true,"max":2},
+        "options":[
+            {"text":"primero","value":1},
+            {"text":"segundo","value":2},
+            {"text":"tercero","value":3}
+        ]
+    }
+]

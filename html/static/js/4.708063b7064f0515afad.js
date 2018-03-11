@@ -1,0 +1,2 @@
+webpackJsonp([4],{ua3t:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var u={mounted:function(){this.$http.get(this.$route.path+".json").then(function(t){var e=t.body;return console.log(e)})}},s=n("XyMi"),o=Object(s.a)(u,function(){var t=this.$createElement;return(this._self._c||t)("div",[this._v("Este es un test")])},[],!1,null,null,null);e.default=o.exports}});
+//# sourceMappingURL=4.708063b7064f0515afad.js.map

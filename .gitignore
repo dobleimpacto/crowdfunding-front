@@ -1,0 +1,7 @@
+node_modules
+*.sw*
+upload
+yarn*
+*.lock
+*.xmind
+vue
